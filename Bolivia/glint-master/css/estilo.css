@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
 body {
-  background: #B1A7A0;
+
 	color: #FCF9F4;
   font-family: "Open Sans", "Arial";
 }
@@ -14,6 +14,17 @@ i {
     color:#ea712e ;
     margin-top: 0;
     margin-bottom: 0;
+}
+#works{
+    height: auto;
+
+}
+
+@media only screen and (max-width: 600px) {
+#works article{
+    width: 80%;
+    float: none;
+    margin: 0 auto;
 }
 
 .herramientas{
@@ -44,7 +55,7 @@ i {
 }
 
 .bgimgFaq{
-	background-image: url('../images/imagen.svg');
+	background-image: url('../images/imagene.jpg');
 	height: 250px;
 	background-size: cover
 }

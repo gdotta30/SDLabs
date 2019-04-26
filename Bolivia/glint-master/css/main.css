@@ -74,15 +74,15 @@ html, body {
 }
 
 body {
-    background: #c5c5c5;
-    font-family: "lora-regular", serif;
-    font-size: 1.7rem;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1.765;
-    color: #757575;
-    margin: 0;
-    padding: 0;
+  background: #c5c5c5;
+  font-family: "lora-regular", serif;
+  font-size: 1.7rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.765;
+  color: #757575;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -1801,7 +1801,7 @@ d {
 
 .home-content h1 {
     font-family: "montserrat-medium", sans-serif;
-    font-size: 6.3rem;
+    font-size: 6rem;
     line-height: 1.333;
     margin-top: 0;
     color: #FFFFFF;
@@ -1987,6 +1987,148 @@ d {
      -ms-transform: scale(1);
      transform: scale(1);
  }
+ * -------------------------------------------------------------------
+  * responsive:
+  * home
+  * ------------------------------------------------------------------- */
+ @media only screen and (max-width: 1500px) {
+     .home-content h1 {
+         font-size: 6rem;
+     }
+     .home-content__main {
+         max-width: 1000px;
+     }
+ }
+
+ @media only screen and (max-width: 1200px) {
+     .home-content h1 {
+         font-size: 5.5rem;
+     }
+     .home-content__main {
+         max-width: 800px;
+     }
+ }
+
+ @media only screen and (max-width: 1000px) {
+     .home-content h1 {
+         font-size: 4.6rem;
+     }
+     .home-content br {
+         display: none;
+     }
+     .home-content__main {
+         padding-top: 21rem;
+         padding-right: 80px;
+         max-width: 680px;
+     }
+ }
+
+ @media only screen and (max-width: 800px) {
+     .home-content h3 {
+         font-size: 1.5rem;
+     }
+     .home-content h1 {
+         font-size: 4rem;
+     }
+     .home-content__main {
+         padding-right: 70px;
+         max-width: 550px;
+     }
+ }
+
+ @media only screen and (max-width: 700px) {
+     .home-content__main {
+         max-width: 490px;
+     }
+     .home-content__buttons {
+         padding-top: 1.2rem;
+         text-align: center;
+     }
+     .home-content__buttons .btn {
+         display: block;
+         width: 70%;
+         margin: 1.5rem 0 0 0;
+     }
+     .home-social {
+         right: 4rem;
+     }
+     .home-content__scroll {
+         right: 7.5rem;
+     }
+     .home-content__line {
+         right: 5.5rem;
+     }
+ }
+
+ @media only screen and (max-width: 600px) {
+     .home-content h1 {
+         font-size: 3.8rem;
+     }
+     .home-social {
+         right: 2rem;
+     }
+     .home-social li {
+         padding: .6rem 0;
+     }
+     .home-social i {
+         font-size: 17px;
+         border: none;
+     }
+     .home-social span {
+         display: none;
+     }
+     .home-content__scroll {
+         bottom: 5.4rem;
+     }
+     .home-content__line {
+         height: 7.2rem;
+     }
+ }
+
+ @media only screen and (max-width: 500px) {
+     .s-home {
+         min-height: 642px;
+     }
+     .home-content h1 {
+         font-size: 3.5rem;
+     }
+     .home-content__main {
+         text-align: center;
+         max-width: none;
+         padding-top: 15rem;
+         padding-right: 25px;
+         width: 85%;
+     }
+     .home-content__buttons {
+         padding-top: 1.2rem;
+     }
+     .home-content__buttons .btn {
+         width: auto;
+         margin: 1.5rem 0 0 0;
+     }
+     .home-social {
+         display: none;
+     }
+ }
+
+ @media only screen and (max-width: 450px) {
+     .home-content h1 {
+         font-size: 3.3rem;
+     }
+ }
+
+ @media only screen and (max-width: 400px) {
+     .s-home {
+         min-height: 630px;
+     }
+     .home-content h1 {
+         font-size: 3.2rem;
+     }
+     .home-content__main {
+         padding-top: 16.2rem;
+         width: auto;
+     }
+ }
 
 
 /* animate .home-content__main
@@ -2144,9 +2286,7 @@ html.no-csstransitions .home-content__main {
     .home-social {
         right: 4rem;
     }
-    .home-content__scroll {
-        right: 7.5rem;
-    }
+
     .home-content__line {
         right: 5.5rem;
     }
@@ -2169,9 +2309,7 @@ html.no-csstransitions .home-content__main {
     .home-social span {
         display: none;
     }
-    .home-content__scroll {
-        bottom: 5.4rem;
-    }
+
     .home-content__line {
         height: 7.2rem;
     }
@@ -2522,6 +2660,10 @@ html.no-csstransitions .home-content__main {
  * # works
  *
  * ------------------------------------------------------------------- */
+ .container {
+   position: relative;
+   padding-top: 15px;
+   }
 .s-works {
     background: #111111;
     padding: 0 0 15rem 0;
@@ -2539,9 +2681,17 @@ html.no-csstransitions .home-content__main {
     margin-top: -23.4rem;
 }
 
+
+
 #works{
 height: 100vh;
 }
+#works{
+    height: auto;
+
+}
+
+
 
 #works h4{color: #e95a0c;}
 
@@ -2555,6 +2705,7 @@ height: 100vh;
     transition: all 0.5s;
     position: relative;
     }
+
 
     #works article img{
         width: 200px;
@@ -2577,6 +2728,64 @@ height: 100vh;
 /* -------------------------------------------------------------------
  * ## bricks/masonry
  * ------------------------------------------------------------------- */
+ .s-works3 {
+     background: #111111;
+     padding: 0 0 15rem 0;
+     min-height: 1000px;
+     position: relative;
+ }
+
+ .s-works3 .intro-wrap {
+     padding: rem 0 25.2rem;
+     background: #111111;
+ }
+
+ .works3-content {
+     max-width: 1160px;
+     margin-top: -23.4rem;
+ }
+
+ #works3{
+ height: 100vh;
+ }
+
+ #works3 h4{color: #e95a0c;}
+
+ #works3 article{
+     width: 40%;
+     float: left;
+     margin: 30px 10px;
+     text-align: left;
+     padding: 20px;
+     border-radius: 0px;
+     transition: all 0.5s;
+     position: relative;
+     }
+
+     #works3 article img{
+         width: 200px;
+         transition: all 0.5s;
+
+             }
+     #works3 article h5{
+     margin-top: 2.2rem;
+     font-weight: 500;
+     line-height: 1.1;
+     font-size: 2rem;
+     color: #ea712e;
+     }
+
+     .btn2 {
+     border: none;
+     color: white;
+     padding: 1px 8px;
+     font-size: 10px;
+
+
+   }
+
+   .proximamente {background-color: #e85c24;} /* Green */
+
 .masonry:after {
     content: "";
     display: table;
@@ -2773,11 +2982,15 @@ height: 100vh;
         padding-bottom: 12rem;
     }
     .s-works .intro-wrap {
-        padding: 12rem 0 25.2rem;
+        padding: rem 0 25.2rem;
     }
     .works-content {
         margin-top: -25.2rem;
     }
+
+  
+}
+
     .masonry__brick {
         float: none;
         width: 100%;
@@ -3449,10 +3662,10 @@ footer .row {
     transition: all 0.3s ease-in-out;
 }
 .land-logosoft {
-      width: 250px;
-    height: 250px;
+      width: 200px;
+    height: 200px;
     background: url("../images/sdsoft.png") no-repeat center;
-    background-size: 250px 250px;
+    background-size: 200px 200px;
     display:block;
 
     transition: all 0.3s ease-in-out;

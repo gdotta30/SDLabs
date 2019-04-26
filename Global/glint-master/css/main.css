@@ -2475,7 +2475,7 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-works {
-    background: #FFFFFF;
+    background: #111111;
     padding: 0 0 15rem 0;
     min-height: 800px;
     position: relative;
@@ -3532,6 +3532,7 @@ footer .row {
         padding-left: 15px;
     }
 }
+
 
 @media only screen and (max-width: 600px) {
     .footer-main .left {
