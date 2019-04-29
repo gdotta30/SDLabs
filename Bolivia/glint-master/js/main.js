@@ -282,7 +282,7 @@
     * ------------------------------------------------------ */
     var clSmoothScroll = function() {
 
-      /*  $('.smoothscroll').on('click', function (e) {
+      $('.smoothscroll').on('click', function (e) {
             var target = this.hash,
             $target    = $(target);
 
@@ -300,7 +300,7 @@
 
                 window.location.hash = target;
             });
-        });*/
+        });
 
     };
 
