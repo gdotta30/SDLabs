@@ -781,7 +781,7 @@ input[type="button"] {
     cursor: pointer;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    
+
     border: .2rem solid #c5c5c5;
 }
 
@@ -2219,7 +2219,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
  .responsiva{
   width: 100%;
-  max-width: 900px;
+  max-width: 200px;
   height: auto;
 
 }
