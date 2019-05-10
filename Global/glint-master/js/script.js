@@ -5,9 +5,62 @@ Version : 1.0
 Author  : Surjith S M
 URI     : https://surjithctly.in/
 
-Copyright © All rights Reserved 
+Copyright © All rights Reserved
 
 */
+/*-----------------------------------
+ * contacto
+ *-----------------------------------*/
+			function contacto() {
+				//Leo los campos de la pantalla.
+				var negocio = new Object();
+				negocio.name = $('#contactName').val();
+				negocio.subject = $('#contactSubject').val();
+				negocio.email = $('#contactEmail').val();
+        negocio.message = $('#contactMessage').val();
+				//valido que el usuario haya ingresado los campos requeridos.
+				var ok = true;
+				if (negocio.name == '' && ok){
+					ok = false;
+					alert('Ingrese Nombre');
+				}
+				if (negocio.subject == '' && ok){
+					ok = false;
+					alert('Ingrese Asunto');
+				}
+				if (negocio.email == '' && ok){
+					ok = false;
+					alert('Ingrese dirección de email');
+				}
+        if (negocio.message == '' && ok){
+          ok = false;
+          alert('Ingrese Mensaje');
+        }
+
+
+				if (ok){
+					//envio los datos al servidor.
+					var jsonString= JSON.stringify(negocio);
+					console.log(jsonString);
+
+					var xhttp = new XMLHttpRequest();
+					//var url = "http://localhost/SoyDeliveryU11.NetEnvironment/aprocessform.aspx";
+					var url = "http://testing.soydelivery.com.uy/aprocessform.aspx";
+
+					xhttp.open("POST", url, false);
+					xhttp.setRequestHeader("Content-type", "application/json");
+					xhttp.send(jsonString);
+
+					var response = JSON.parse(xhttp.responseText);
+					if (response.errorCode == 0){
+						alert('¡Gracias por escribirnos, nos pondremos en contacto a la brevedad!');
+					}else{
+						alert(response.errorDescription);
+					}
+				}
+
+			};
+
 
 $(function() {
     "use strict";
@@ -34,7 +87,7 @@ $(function() {
     $('.navbar-nav > li:not(.dropdown) > a').on('click', function() {
         $('.navbar-collapse').collapse('hide');
     });
-    /* 
+    /*
      * NAVBAR TOGGLE BG
      *-----------------*/
     var siteNav = $('#navbar');
