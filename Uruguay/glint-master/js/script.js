@@ -5,9 +5,75 @@ Version : 1.0
 Author  : Surjith S M
 URI     : https://surjithctly.in/
 
-Copyright © All rights Reserved 
+Copyright © All rights Reserved
 
 */
+
+function limpiarCampos(){
+	 $('#contactForm')[0].reset();
+	 $('#contactName').val("");
+	 $('#contactSubject').val("");
+	 $('#contactEmail').val("");
+	 $('#contactMessage').val("");
+	 $('#contactName').focus();
+}
+
+function contacto() {
+	 //Leo los campos de la pantalla.
+
+	 var negocio = new Object();
+	 negocio.name = $('#contactName').val();
+	 negocio.subject = $('#contactSubject').val();
+	 negocio.email = $('#contactEmail').val();
+	 negocio.message = $('#contactMessage').val();
+	 //valido que el usuario haya ingresado los campos requeridos.
+	 var ok = true;
+	 if (negocio.name == '' && ok){
+		 ok = false;
+		 alertify.error('Ingrese Nombre del Contacto');
+	 }
+	 if (negocio.subject == '' && ok){
+		 ok = false;
+		 alertify.error('Ingrese Asunto del Mensaje');
+	 }
+	 if (negocio.email == '' && ok){
+		 ok = false;
+		 alertify.error('Ingrese dirección de email');
+	 }
+	 if (negocio.message == '' && ok){
+		 ok = false;
+		 alertify.error('Ingrese Mensaje');
+	 }
+
+
+	 if (ok){
+		 //envio los datos al servidor.
+		 var jsonString= JSON.stringify(negocio);
+
+
+		 $.ajax({
+					 url: "http://192.168.1.232/SoyDeliveryV16U2.NetEnvironment/aprocessform.aspx",
+					 type: "POST",
+					 dataType: "json",
+					 crossDomain: true,
+					 data: jsonString,
+					 success: function(respuesta) {
+						 if (respuesta.errorcode == 0){
+							 alertify.success('¡Gracias por escribirnos, nos pondremos en contacto a la brevedad!');
+							 limpiarCampos();
+						 }else{
+							 alertify.error(respuesta.errordesc);
+						 }
+					 },
+					 error:
+							 function() {
+								 alertify.error("Error de comunicaciones, reintente en unos minutos");
+							 }
+			 });
+
+	 }
+
+ };
 
 $(function() {
     "use strict";
@@ -34,7 +100,7 @@ $(function() {
     $('.navbar-nav > li:not(.dropdown) > a').on('click', function() {
         $('.navbar-collapse').collapse('hide');
     });
-    /* 
+    /*
      * NAVBAR TOGGLE BG
      *-----------------*/
     var siteNav = $('#navbar');

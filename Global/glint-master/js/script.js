@@ -11,56 +11,72 @@ Copyright © All rights Reserved
 /*-----------------------------------
  * contacto
  *-----------------------------------*/
-			function contacto() {
-				//Leo los campos de la pantalla.
-				var negocio = new Object();
-				negocio.name = $('#contactName').val();
-				negocio.subject = $('#contactSubject').val();
-				negocio.email = $('#contactEmail').val();
-        negocio.message = $('#contactMessage').val();
-				//valido que el usuario haya ingresado los campos requeridos.
-				var ok = true;
-				if (negocio.name == '' && ok){
-					ok = false;
-					alert('Ingrese Nombre');
-				}
-				if (negocio.subject == '' && ok){
-					ok = false;
-					alert('Ingrese Asunto');
-				}
-				if (negocio.email == '' && ok){
-					ok = false;
-					alert('Ingrese dirección de email');
-				}
-        if (negocio.message == '' && ok){
-          ok = false;
-          alert('Ingrese Mensaje');
-        }
+
+function limpiarCampos(){
+	 $('#contactForm')[0].reset();
+	 $('#contactName').val("");
+	 $('#contactSubject').val("");
+	 $('#contactEmail').val("");
+	 $('#contactMessage').val("");
+	 $('#contactName').focus();
+}
+
+function contacto() {
+	 //Leo los campos de la pantalla.
+
+	 var negocio = new Object();
+	 negocio.name = $('#contactName').val();
+	 negocio.subject = $('#contactSubject').val();
+	 negocio.email = $('#contactEmail').val();
+	 negocio.message = $('#contactMessage').val();
+	 //valido que el usuario haya ingresado los campos requeridos.
+	 var ok = true;
+	 if (negocio.name == '' && ok){
+		 ok = false;
+		 alertify.error('Ingrese Nombre del Contacto');
+	 }
+	 if (negocio.subject == '' && ok){
+		 ok = false;
+		 alertify.error('Ingrese Asunto del Mensaje');
+	 }
+	 if (negocio.email == '' && ok){
+		 ok = false;
+		 alertify.error('Ingrese dirección de email');
+	 }
+	 if (negocio.message == '' && ok){
+		 ok = false;
+		 alertify.error('Ingrese Mensaje');
+	 }
 
 
-				if (ok){
-					//envio los datos al servidor.
-					var jsonString= JSON.stringify(negocio);
-					console.log(jsonString);
+	 if (ok){
+		 //envio los datos al servidor.
+		 var jsonString= JSON.stringify(negocio);
 
-					var xhttp = new XMLHttpRequest();
-					//var url = "http://localhost/SoyDeliveryU11.NetEnvironment/aprocessform.aspx";
-					var url = "http://testing.soydelivery.com.uy/aprocessform.aspx";
 
-					xhttp.open("POST", url, false);
-					xhttp.setRequestHeader("Content-type", "application/json");
-					xhttp.send(jsonString);
+		 $.ajax({
+					 url: "http://192.168.1.232/SoyDeliveryV16U2.NetEnvironment/aprocessform.aspx",
+					 type: "POST",
+					 dataType: "json",
+					 crossDomain: true,
+					 data: jsonString,
+					 success: function(respuesta) {
+						 if (respuesta.errorcode == 0){
+							 alertify.success('¡Gracias por escribirnos, nos pondremos en contacto a la brevedad!');
+							 limpiarCampos();
+						 }else{
+							 alertify.error(respuesta.errordesc);
+						 }
+					 },
+					 error:
+							 function() {
+								 alertify.error("Error de comunicaciones, reintente en unos minutos");
+							 }
+			 });
 
-					var response = JSON.parse(xhttp.responseText);
-					if (response.errorCode == 0){
-						alert('¡Gracias por escribirnos, nos pondremos en contacto a la brevedad!');
-					}else{
-						alert(response.errorDescription);
-					}
-				}
+	 }
 
-			};
-
+ };
 
 $(function() {
     "use strict";

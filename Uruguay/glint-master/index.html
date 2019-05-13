@@ -25,10 +25,16 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/flags.css">
   <link rel="stylesheet" href="css/estilo.css">
-    <!-- script
+
+    <link rel="stylesheet" href="css/alertify.core.css">
+    <link rel="stylesheet" href="css/alertify.default.css">
+
+
     ================================================== -->
     <script src="js/modernizr.js"></script>
     <script src="js/pace.min.js"></script>
+    <script src="js/alertify.js"></script>
+    <script src="js/script.js"></script>
 
     <!-- favicons
     ================================================== -->
@@ -361,7 +367,7 @@ A su vez, tu cliente podrá ver la posición del vehículo desde nuestra aplicac
 
                 <h3 class="h6">Escríbenos</h3>
 
-                <form name="contactForm" id="contactForm" method="post" action="" novalidate="novalidate">
+                <form name="contactForm" id="contactForm" >
                     <fieldset>
 
                     <div class="form-field">
@@ -377,29 +383,13 @@ A su vez, tu cliente podrá ver la posición del vehículo desde nuestra aplicac
                         <textarea name="contactMessage" id="contactMessage" placeholder="Tu mensaje" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
                     </div>
                     <div class="form-field">
-                        <button class="full-width btn--primary" action="mailto:lucia.gonzalez@soydelivery.com.uy">Enviar</button>
-                        <div class="submit-loader">
-                            <div class="text-loader">Enviando...</div>
-                            <div class="s-loader">
-                                <div class="bounce1"></div>
-                                <div class="bounce2"></div>
-                                <div class="bounce3"></div>
-                            </div>
-                        </div>
+                          <button class="full-width btn--primary" onclick="contacto()">Enviar</button>
                     </div>
 
                     </fieldset>
                 </form>
 
-                <!-- contact-warning -->
-                <div class="message-warning">
-                    Algo salió mal. Por favor intenta nuevamente.
-                </div>
 
-                <!-- contact-success -->
-                <div class="message-success">
-                    Tu mensaje fue enviado, Muchas Gracias!<br>
-                </div>
 
             </div> <!-- end contact-primary -->
 
