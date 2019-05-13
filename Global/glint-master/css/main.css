@@ -781,7 +781,6 @@ input[type="button"] {
     cursor: pointer;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #c5c5c5;
     border: .2rem solid #c5c5c5;
 }
 
@@ -1214,7 +1213,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     color: #FFFFFF;
 }
 
-.subhead + .display-2 {
+.qad + .display-2 {
     margin-top: .6rem;
 }
 
@@ -1233,6 +1232,17 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     color: #000000;
 }
 
+.subhead2 {
+    font-family: "montserrat-bold", sans-serif;
+    font-size: 4rem;
+    line-height: 1.333;
+    text-transform: uppercase;
+    letter-spacing: .25rem;
+    color: #ea712e;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 15rem;
+}
 
 /* -------------------------------------------------------------------
  * responsive:
@@ -2482,7 +2492,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .s-works .intro-wrap {
-    padding: 15rem 0 25.2rem;
+
     background: #111111;
 }
 
@@ -2691,9 +2701,7 @@ html.no-csstransitions .home-content__main {
     .s-works {
         padding-bottom: 12rem;
     }
-    .s-works .intro-wrap {
-        padding: 12rem 0 25.2rem;
-    }
+
     .works-content {
         margin-top: -25.2rem;
     }
@@ -2842,6 +2850,9 @@ html.no-csstransitions .home-content__main {
     margin-top: -0.6px;
 }
 
+.proximamente {
+    background-color: #e85c24;
+}
 
 /* -------------------------------------------------------------------
  * responsive:
@@ -3365,7 +3376,7 @@ footer .row {
     padding: 0;
     outline: 0;
     border: none;
-    
+
     height: 200px;
     background: url("../images/logo-footer.png") no-repeat center;
     background-size: 150px 150px;
@@ -3586,3 +3597,132 @@ footer .row {
 
 
 /*# sourceMappingURL=main.css.map */
+* ===================================================================
+ * # works
+ *
+ * ------------------------------------------------------------------- */
+ .container {
+   position: relative;
+   padding-top: 15px;
+   }
+.s-works {
+    background: #111111;
+    padding: 0 0 15rem 0;
+    min-height: 1000px;
+    position: relative;
+}
+
+.s-works .intro-wrap {
+    padding: rem 0 25.2rem;
+    background: #111111;
+}
+
+.works-content {
+    max-width: 1160px;
+    margin-top: -23.4rem;
+}
+
+
+
+#works{
+height: 100vh;
+}
+#works{
+    height: auto;
+
+}
+
+
+
+#works h4{color: #e95a0c;}
+
+#works article{
+    width: 30%;
+    float: left;
+    margin: 30px 10px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 0px;
+    transition: all 0.5s;
+    position: relative;
+    }
+
+
+    #works article img{
+        width: 200px;
+        transition: all 0.5s;
+
+            }
+    #works article h5{
+    margin-top: 2.2rem;
+    font-weight: 500;
+    line-height: 1.1;
+    font-size: 2rem;
+    color: #ea712e;
+    }
+
+    #works article:hover img{
+        width: 130px;
+    }
+
+
+/* -------------------------------------------------------------------
+ * ## bricks/masonry
+ * ------------------------------------------------------------------- */
+ .s-works3 {
+     background: #111111;
+     padding: 0 0 15rem 0;
+     min-height: 2000px;
+     position: relative;
+ }
+
+
+ .s-works3 .intro-wrap {
+     padding: rem 0 25.2rem;
+     background: #111111;
+ }
+
+ .works3-content {
+     max-width: 1160px;
+     margin-top: -23.4rem;
+ }
+
+ #works3{
+ height: 100vh;
+ }
+
+ #works3 h4{color: #e95a0c;}
+
+ #works3 article{
+     width: 40%;
+     float: left;
+     margin: 30px 10px;
+     text-align: left;
+     padding: 20px;
+     border-radius: 0px;
+     transition: all 0.5s;
+     position: relative;
+     }
+
+     #works3 article img{
+         width: 400px;
+         transition: all 0.5s;
+         max-width: 100%;
+             }
+     #works3 article h5{
+     margin-top: 2.2rem;
+     font-weight: 500;
+     line-height: 1.1;
+     font-size: 3rem;
+     color: #ea712e;
+     padding-top: 90px;w
+     }
+
+     .btn2 {
+     border: none;
+     color: white;
+     padding: 1px 8px;
+     font-size: 10px;
+
+
+   }
