@@ -1797,10 +1797,11 @@ d {
 
 .home-content h1 {
     font-family: "montserrat-medium", sans-serif;
-    font-size: 6.3rem;
+    font-size: 7rem;
     line-height: 1.333;
     margin-top: 0;
     color: #FFFFFF;
+    letter-spacing: 2px;
 }
 
 .home-content__main {
