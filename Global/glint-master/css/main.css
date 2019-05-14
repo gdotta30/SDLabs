@@ -1801,7 +1801,7 @@ d {
     line-height: 1.333;
     margin-top: 0;
     color: #FFFFFF;
-    letter-spacing: 2px;
+
 }
 
 .home-content__main {
@@ -3326,7 +3326,7 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 footer {
-    padding: 6rem 0 6rem;
+    padding: 1rem 0 6rem;
     font-family: "montserrat-light", sans-serif;
     font-size: 15px;
     line-height: 2;
@@ -3687,6 +3687,31 @@ height: 100vh;
      max-width: 1160px;
      margin-top: -23.4rem;
  }
+
+ .land-logoen {
+    width: 200px;
+    height: 200px;
+    background: url(../images/sden.png) no-repeat center;
+    background-size: 200px 200px;
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+.land-logoex {
+    width: 200px;
+    height: 200px;
+    background: url(../images/sdex.png) no-repeat center;
+    background-size: 200px 200px;
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+.land-logosoft {
+    width: 200px;
+    height: 200px;
+    background: url(../images/sdsoft.png) no-repeat center;
+    background-size: 200px 200px;
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
 
  #works3{
  height: 100vh;

@@ -18,7 +18,12 @@ margin-bottom: 0;
 #works {
 height: auto;
 }
-
+.bgimgFaq {
+	background-image: url('../images/imagene.jpg');
+	height: 250px;
+	background-size: cover
+	
+}
 .articleLeft{
 	left: 50%;
 }
@@ -88,11 +93,7 @@ height: auto;
 	color: white !important;
 	padding-top: 125px !important
 }
-.bgimgFaq {
-	background-image: url('../images/imagene.jpg');
-	height: 250px;
-	background-size: cover
-}
+
 body .card-title,
 body .mbr-section-title {
 	color: #292929
