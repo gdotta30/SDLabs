@@ -76,7 +76,7 @@ html, body {
 body {
   background: #c5c5c5;
   font-family: "lora-regular", serif;
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   font-style: normal;
   font-weight: normal;
   line-height: 1.765;
@@ -1798,7 +1798,7 @@ d {
 
 .home-content h1 {
     font-family: "montserrat-medium", sans-serif;
-    font-size: 7rem;
+    font-size: 6rem;
     line-height: 1.333;
     margin-top: 0;
     color: #FFFFFF;
@@ -2221,8 +2221,8 @@ html.no-csstransitions .home-content__main {
  * home
  * ------------------------------------------------------------------- */
  .responsiva{
-  width: 100%;
-  max-width: 200px;
+  width: 250px;
+  max-width: 100%;
   height: auto;
 
 }
@@ -2375,7 +2375,7 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-about {
-    padding-top: 5.2rem;
+    padding-top: 16.2rem;
     padding-bottom: 9rem;
     background-color: #EA712E;
     color: #010507;
@@ -2745,6 +2745,7 @@ height: 100vh;
  * ## bricks/masonry
  * ------------------------------------------------------------------- */
  .s-works3 {
+
      background: #111111;
      padding: 0 0 15rem 0;
      min-height: 2000px;
@@ -2768,6 +2769,9 @@ height: 100vh;
 
  #works3 h4{color: #e95a0c;}
 
+#works3 p{
+  font-size: 16px
+}
  #works3 article{
      width: 40%;
      float: left;
