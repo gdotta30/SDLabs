@@ -394,6 +394,9 @@ width: 250px
      padding-bottom: 56.25%;
      padding-top: 30px;
      position: relative;
+
+    }
+
      }
  .video-responsive iframe, .video-responsive object, .video-responsive embed {
      height: 100%;
@@ -401,6 +404,7 @@ width: 250px
      position: absolute;
      top: 0;
      width: 100%;
+
      }
 
 
@@ -2192,24 +2196,26 @@ html.no-csstransitions .home-content__main {
  * # about
  *
  * ------------------------------------------------------------------- */
-.s-about {
-    padding-top: 16.2rem;
-    padding-bottom: 9rem;
-    background-color: #EA712E;
-    color: #010507;
-    position: relative;
-}
+ .s-about {
+     padding-top: 16.2rem;
+     padding-bottom: 9rem;
+     background-color: #EA712E;
+     color: #010507;
+     position: relative;
+     
+ }
 
-.s-about .section-header.has-bottom-sep::before {
-    background-color: rgba(255, 255, 255, 0.25);
-}
+ .s-about .section-header.has-bottom-sep::before {
+     background-color: rgba(255, 255, 255, 0.25);
+ }
 
-.about-desc {
-    font-size: 2.4rem;
-    line-height: 1.75;
-    text-align: center;
-    max-width: 1024px;
-}
+ .about-desc {
+     font-size: 2.4rem;
+     line-height: 1.75;
+     text-align: center;
+     max-width: 1024px;
+ }
+
 
 
 /* -------------------------------------------------------------------
