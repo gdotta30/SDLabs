@@ -1839,6 +1839,33 @@ d {
     color: #000000;
 }
 
+.home-content__buttons2 {
+    padding-top: 3rem;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.home-content__buttons2 .btn {
+
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+    margin: 1.5rem 1.5rem 0 0;
+    letter-spacing: .25rem;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.home-content__buttons2 .btn:last-child {
+    margin-right: 0;
+}
+
+.home-content__buttons2 .btn:hover,
+.home-content__buttons2 .btn:focus {
+    background: #FFFFFF !important;
+    color: #000000;
+}
+
+
 .home-content__scroll {
     position: absolute;
     right: 9.5rem;
@@ -2202,7 +2229,7 @@ html.no-csstransitions .home-content__main {
      background-color: #EA712E;
      color: #010507;
      position: relative;
-     
+
  }
 
  .s-about .section-header.has-bottom-sep::before {
@@ -3680,7 +3707,7 @@ height: 100vh;
  .s-works3 {
      background: #111111;
      padding: 0 0 15rem 0;
-     min-height: 2000px;
+     min-height: 2200px;
      position: relative;
  }
 
