@@ -461,7 +461,7 @@ textarea {
 /* column blocks
  * -------------------------------------- */
 [class*="col-"] {
-  
+  float: left;
     padding: 0 10px;
     padding-bottom: 30px;
 }

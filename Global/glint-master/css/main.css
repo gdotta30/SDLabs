@@ -397,7 +397,6 @@ width: 250px
 
     }
 
-     }
  .video-responsive iframe, .video-responsive object, .video-responsive embed {
      height: 100%;
      left: 0;
@@ -2224,7 +2223,8 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
  .s-about {
-     padding-top: 16.2rem;
+   padding: 20rem;
+     padding-top: 15rem;
      padding-bottom: 9rem;
      background-color: #EA712E;
      color: #010507;
@@ -2396,7 +2396,8 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-services {
-    padding-top: 16.2rem;
+    padding: 20rem;
+    padding-top: 15rem;
     padding-bottom: 13.2rem;
     background-color: #FFFFFF;
     color: #757575;
@@ -2438,7 +2439,14 @@ html.no-csstransitions .home-content__main {
     margin-top: -.6rem;
 }
 
-
+.col-full {
+   width: 100% !important;
+   float: none !important;
+   clear: both !important;
+   margin-left: 0;
+   margin-right: 0;
+   padding: 0;
+}
 /* -------------------------------------------------------------------
  * responsive:
  * services

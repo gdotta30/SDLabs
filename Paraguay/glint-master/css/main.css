@@ -1802,7 +1802,7 @@ d {
     line-height: 1.333;
     margin-top: 0;
     color: #FFFFFF;
-    
+
 }
 
 .home-content__main {
@@ -2375,7 +2375,8 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-about {
-    padding-top: 5.2rem;
+  padding: 20rem;
+    padding-top: 15rem;
     padding-bottom: 9rem;
     background-color: #EA712E;
     color: #010507;
@@ -2553,7 +2554,8 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-services {
-    padding-top: 16.2rem;
+  padding:20rem;
+    padding-top: 15rem;
     padding-bottom: 13.2rem;
     background-color: #FFFFFF;
     color: #757575;
