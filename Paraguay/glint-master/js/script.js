@@ -53,7 +53,7 @@ function contacto() {
 
 
 		 $.ajax({
-					 url: "http://192.168.1.232/SoyDeliveryV16U2.NetEnvironment/aprocessform.aspx",
+					 url: "https://soydelivery.com.py/aprocessform.aspx",
 					 type: "POST",
 					 dataType: "json",
 					 crossDomain: true,
@@ -76,7 +76,7 @@ function contacto() {
 
  };
 
- 
+
 $(function() {
     "use strict";
 
