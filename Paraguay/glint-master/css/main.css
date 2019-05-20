@@ -1268,7 +1268,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 @media only screen and (max-width: 600px) {
     .display-1 {
-        font-size: 5rem;
+        font-size: 4.2rem;
     }
     .display-2 {
         font-size: 3.3rem;
@@ -2375,7 +2375,7 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-about {
-  padding: 20rem;
+
     padding-top: 15rem;
     padding-bottom: 9rem;
     background-color: #EA712E;
@@ -2505,7 +2505,7 @@ html.no-csstransitions .home-content__main {
         padding-top: 12rem;
     }
     .about-desc {
-        font-size: 1.9rem;
+        font-size: 1.8rem;
     }
     .about-stats {
         padding-top: 0;
@@ -2554,7 +2554,7 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-services {
-  padding:20rem;
+
     padding-top: 15rem;
     padding-bottom: 13.2rem;
     background-color: #FFFFFF;
