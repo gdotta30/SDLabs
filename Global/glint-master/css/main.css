@@ -105,7 +105,6 @@ a:hover, a:active {
 }
 
 
-
 /* ===================================================================
  * # typography & general theme styles
  *
@@ -2223,7 +2222,7 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
  .s-about {
-  
+
      padding-top: 15rem;
      padding-bottom: 9rem;
      background-color: #EA712E;
@@ -3640,10 +3639,7 @@ footer .row {
 
 
 /*# sourceMappingURL=main.css.map */
-* ===================================================================
- * # works
- *
- * ------------------------------------------------------------------- */
+
  .container {
    position: relative;
    padding-top: 15px;
@@ -3709,6 +3705,54 @@ height: 100vh;
     }
 
 
+
+
+
+
+
+
+
+
+
+    #news{
+    height: 100vh;
+    }
+    #news{
+        height: auto;
+
+    }
+
+
+
+    #news h4{color: #e95a0c;}
+
+    #news article{
+        width: 30%;
+        float: left;
+        margin: 30px 10px;
+        text-align: left;
+        padding: 20px;
+        border-radius: 0px;
+        transition: all 0.5s;
+        position: relative;
+        }
+
+
+        #news article img{
+            width: 200px;
+            transition: all 0.5s;
+
+                }
+        #news article h5{
+        margin-top: 2.2rem;
+        font-weight: 500;
+        line-height: 1.1;
+        font-size: 2rem;
+        color: #ea712e;
+        }
+
+
+
 /* -------------------------------------------------------------------
  * ## bricks/masonry
  * ------------------------------------------------------------------- */
@@ -3750,6 +3794,14 @@ height: 100vh;
     width: 200px;
     height: 200px;
     background: url(../images/sdsoft.png) no-repeat center;
+    background-size: 200px 200px;
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+.land-logo {
+    width: 200px;
+    height: 200px;
+    background: url(../images/logo-footer.png) no-repeat center;
     background-size: 200px 200px;
     display: block;
     transition: all 0.3s ease-in-out;
