@@ -25,28 +25,34 @@ function contacto() {
 	 //Leo los campos de la pantalla.
 
 	 var negocio = new Object();
-	 negocio.name = $('#contactName').val();
-	 negocio.subject = $('#contactSubject').val();
-	 negocio.email = $('#contactEmail').val();
-	 negocio.message = $('#contactMessage').val();
-	 //valido que el usuario haya ingresado los campos requeridos.
-	 var ok = true;
-	 if (negocio.name == '' && ok){
-		 ok = false;
-		 alertify.error('Ingrese Nombre del Contacto');
-	 }
-	 if (negocio.subject == '' && ok){
-		 ok = false;
-		 alertify.error('Ingrese Asunto del Mensaje');
-	 }
-	 if (negocio.email == '' && ok){
-		 ok = false;
-		 alertify.error('Ingrese dirección de email');
-	 }
-	 if (negocio.message == '' && ok){
-		 ok = false;
-		 alertify.error('Ingrese Mensaje');
-	 }
+	negocio.name = $('#contactName').val();
+	negocio.subject = $('#contactSubject').val();
+	negocio.email = $('#contactEmail').val();
+	negocio.tel = $('#contactTel').val();
+	negocio.message = $('#contactMessage').val();
+	//valido que el usuario haya ingresado los campos requeridos.
+	var ok = true;
+	if (negocio.name == '' && ok){
+		ok = false;
+		alertify.error('Ingrese Nombre del Contacto');
+	}
+	if (negocio.subject == '' && ok){
+		ok = false;
+		alertify.error('Ingrese Asunto del Mensaje');
+	}
+	if (negocio.email == '' && ok){
+		ok = false;
+		alertify.error('Ingrese dirección de email');
+	}
+	if (negocio.tel == '' && ok){
+	 ok = false;
+	 alertify.error('Ingrese el teléfono de contacto');
+ }
+	if (negocio.message == '' && ok){
+		ok = false;
+		alertify.error('Ingrese Mensaje');
+	}
+
 
 
 	 if (ok){

@@ -25,6 +25,7 @@ function contacto() {
 	 negocio.name = $('#contactName').val();
 	 negocio.subject = $('#contactSubject').val();
 	 negocio.email = $('#contactEmail').val();
+	 negocio.tel = $('#contactTel').val();
 	 negocio.message = $('#contactMessage').val();
 	 //valido que el usuario haya ingresado los campos requeridos.
 	 var ok = true;
@@ -40,6 +41,10 @@ function contacto() {
 		 ok = false;
 		 alertify.error('Ingrese dirección de email');
 	 }
+	 if (negocio.tel == '' && ok){
+		ok = false;
+		alertify.error('Ingrese el teléfono de contacto');
+	}
 	 if (negocio.message == '' && ok){
 		 ok = false;
 		 alertify.error('Ingrese Mensaje');
